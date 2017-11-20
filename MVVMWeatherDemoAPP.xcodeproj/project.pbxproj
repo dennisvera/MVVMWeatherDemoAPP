@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
-		E1FE7FA01FC25C0E001FB3A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* ViewController.swift */; };
+		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
-		E1FE7FA61FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7FA41FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodeld */; };
 		E1FE7FA81FC25C0E001FB3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA71FC25C0E001FB3A5 /* Assets.xcassets */; };
 		E1FE7FAB1FC25C0E001FB3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA91FC25C0E001FB3A5 /* LaunchScreen.storyboard */; };
 		E1FE7FB61FC25C0E001FB3A5 /* MVVMWeatherDemoAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7FB51FC25C0E001FB3A5 /* MVVMWeatherDemoAPPTests.swift */; };
@@ -37,9 +36,8 @@
 /* Begin PBXFileReference section */
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1FE7F9F1FC25C0E001FB3A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E1FE7FA21FC25C0E001FB3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E1FE7FA51FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMWeatherDemoAPP.xcdatamodel; sourceTree = "<group>"; };
 		E1FE7FA71FC25C0E001FB3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1FE7FAA1FC25C0E001FB3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1FE7FAC1FC25C0E001FB3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,11 @@
 		E1FE7F9C1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP */ = {
 			isa = PBXGroup;
 			children = (
-				E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */,
-				E1FE7F9F1FC25C0E001FB3A5 /* ViewController.swift */,
-				E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */,
-				E1FE7FA71FC25C0E001FB3A5 /* Assets.xcassets */,
-				E1FE7FA91FC25C0E001FB3A5 /* LaunchScreen.storyboard */,
-				E1FE7FAC1FC25C0E001FB3A5 /* Info.plist */,
-				E1FE7FA41FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodeld */,
+				E1FE7FCE1FC25E31001FB3A5 /* Application Delegate */,
+				E1FE7FCF1FC25E4C001FB3A5 /* View Controllers */,
+				E1FE7FD21FC25EBB001FB3A5 /* Storyboards */,
+				E1FE7FD31FC25EF6001FB3A5 /* Resources */,
+				E1FE7FD41FC25F28001FB3A5 /* Supporting Files */,
 			);
 			path = MVVMWeatherDemoAPP;
 			sourceTree = "<group>";
@@ -126,6 +122,55 @@
 				E1FE7FC21FC25C0E001FB3A5 /* Info.plist */,
 			);
 			path = MVVMWeatherDemoAPPUITests;
+			sourceTree = "<group>";
+		};
+		E1FE7FCE1FC25E31001FB3A5 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		E1FE7FCF1FC25E4C001FB3A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7FD01FC25E95001FB3A5 /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E1FE7FD01FC25E95001FB3A5 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		E1FE7FD21FC25EBB001FB3A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */,
+				E1FE7FA91FC25C0E001FB3A5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E1FE7FD31FC25EF6001FB3A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7FA71FC25C0E001FB3A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1FE7FD41FC25F28001FB3A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1FE7FAC1FC25C0E001FB3A5 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1FE7FA61FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodeld in Sources */,
-				E1FE7FA01FC25C0E001FB3A5 /* ViewController.swift in Sources */,
+				E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */,
 				E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,19 +606,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E1FE7FA41FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E1FE7FA51FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodel */,
-			);
-			currentVersion = E1FE7FA51FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.xcdatamodel */;
-			path = MVVMWeatherDemoAPP.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E1FE7F921FC25C0E001FB3A5 /* Project object */;
 }
