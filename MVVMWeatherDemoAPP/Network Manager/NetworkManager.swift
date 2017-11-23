@@ -10,6 +10,6 @@ import Foundation
 
 class NetworkManager {
     
-    let APIKey = "xxxxxxx"
-    let BaseURL = "xxxx.com"
+    let APIKey = "xxxxxxxxxxxxxxxxxxx"
+    let BaseURL = "xxxxxxxxxxxxxx.com"
 }
