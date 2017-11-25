@@ -12,4 +12,7 @@ class NetworkManager {
     
     let APIKey = "xxxxxxxxxxxxxxxxxxx"
     let BaseURL = "xxxxxxxxxxxxxx.com"
+    
+    let APIKeyxx = "xxxxxxxxxxxxxxxxxxx"
+    let BaseURLxx = "xxxxxxxxxxxxxx.com"
 }
