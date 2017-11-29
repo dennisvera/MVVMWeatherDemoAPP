@@ -99,8 +99,8 @@
 		E1FE7F9C1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP */ = {
 			isa = PBXGroup;
 			children = (
-				E1FE7FD51FC26144001FB3A5 /* Network Manager */,
 				E1FE7FCE1FC25E31001FB3A5 /* Application Delegate */,
+				E1FE7FD51FC26144001FB3A5 /* Network Manager */,
 				E1FE7FCF1FC25E4C001FB3A5 /* View Controllers */,
 				E1FE7FD21FC25EBB001FB3A5 /* Storyboards */,
 				E1FE7FD31FC25EF6001FB3A5 /* Resources */,
