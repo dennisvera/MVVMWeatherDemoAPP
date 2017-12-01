@@ -23,13 +23,13 @@
                                     <constraint firstAttribute="height" constant="200" id="Q3H-kY-9Cy"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="rQL-GY-zo6" kind="embed" id="A3E-TM-0Au"/>
+                                    <segue destination="rQL-GY-zo6" kind="embed" identifier="SegueDayView" id="A3E-TM-0Au"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-ro-Onn">
                                 <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                                 <connections>
-                                    <segue destination="4BT-1d-jxa" kind="embed" id="baT-es-gu9"/>
+                                    <segue destination="4BT-1d-jxa" kind="embed" identifier="SegueWeekView" id="baT-es-gu9"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -46,6 +46,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dayViewController" destination="1sE-c4-pMk" id="Rnm-1Y-LVE"/>
+                        <outlet property="weekViewController" destination="zTx-ro-Onn" id="kAQ-kI-Dbx"/>
                         <segue destination="YPG-kV-Fg3" kind="presentation" identifier="SegueSettingsView" id="Kjk-4E-Roz"/>
                         <segue destination="EeL-Ms-rgk" kind="presentation" id="8jD-HS-G0C"/>
                     </connections>
@@ -228,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="918" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Day View Controller-->
         <scene sceneID="SAq-kR-dAN">
             <objects>
-                <viewController id="rQL-GY-zo6" sceneMemberID="viewController">
+                <viewController id="rQL-GY-zo6" customClass="DayViewController" customModule="MVVMWeatherDemoAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ymw-gl-uJo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,21 +247,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-py-kXW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-py-kXW">
                                 <rect key="frame" x="8" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="Liy-FI-abQ"/>
                                     <constraint firstAttribute="height" constant="44" id="pcR-wx-CWl"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="button-location-normal"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA9-0C-78u">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA9-0C-78u">
                                 <rect key="frame" x="323" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2JA-oJ-unU"/>
                                     <constraint firstAttribute="width" constant="44" id="ubj-b3-EZd"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="button-settings-normal"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l81-zj-TaX">
                                 <rect key="frame" x="60" y="8" width="255" height="26.5"/>
@@ -459,4 +461,8 @@
             <point key="canvasLocation" x="141.59999999999999" y="1082.608695652174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-location-normal" width="28" height="28"/>
+        <image name="button-settings-normal" width="28" height="28"/>
+    </resources>
 </document>
