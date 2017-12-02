@@ -395,7 +395,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="XQx-yL-jHG">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherDayCell" rowHeight="103" id="XQx-yL-jHG" customClass="WeatherDayTableViewCell" customModule="MVVMWeatherDemoAPP" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XQx-yL-jHG" id="PlW-jV-dKc">
@@ -451,6 +451,13 @@
                                                         <constraint firstItem="Hu9-lg-tcc" firstAttribute="top" secondItem="Gn4-be-LCe" secondAttribute="bottom" id="wj2-dT-hNT"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="dateLabel" destination="Hu9-lg-tcc" id="901-6h-0f7"/>
+                                                    <outlet property="dayLabel" destination="Gn4-be-LCe" id="PY4-In-POZ"/>
+                                                    <outlet property="iconImageView" destination="nzP-GZ-yfi" id="fBH-ag-Chz"/>
+                                                    <outlet property="temperatureLabel" destination="xVR-tL-cG8" id="uFR-Ak-wph"/>
+                                                    <outlet property="windSpeedLabel" destination="9m9-pt-FGw" id="Nde-JK-ps4"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>

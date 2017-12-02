@@ -12,6 +12,7 @@
 		E18ECCFC1FD230AB008631DC /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECCFB1FD230AB008631DC /* WeatherData.swift */; };
 		E18ECCFF1FD344B4008631DC /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECCFE1FD344B4008631DC /* JSONDecodable.swift */; };
 		E18ECD011FD34C2B008631DC /* WeatherDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECD001FD34C28008631DC /* WeatherDayData.swift */; };
+		E18ECD071FD3582B008631DC /* WetaherDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECD061FD3582B008631DC /* WetaherDayTableViewCell.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		E18ECCFB1FD230AB008631DC /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		E18ECCFE1FD344B4008631DC /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		E18ECD001FD34C28008631DC /* WeatherDayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayData.swift; sourceTree = "<group>"; };
+		E18ECD061FD3582B008631DC /* WetaherDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetaherDayTableViewCell.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,8 @@
 			children = (
 				E18ECCF61FD20CD3008631DC /* DayViewController.swift */,
 				E18ECCF81FD214CE008631DC /* WeatherViewController.swift */,
+				E18ECD051FD357E9008631DC /* Table View Cells */,
+				E18ECD041FD357AA008631DC /* View Models */,
 			);
 			path = "Weather View Controller";
 			sourceTree = "<group>";
@@ -110,6 +114,21 @@
 				E18ECCFE1FD344B4008631DC /* JSONDecodable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E18ECD041FD357AA008631DC /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E18ECD051FD357E9008631DC /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E18ECD061FD3582B008631DC /* WetaherDayTableViewCell.swift */,
+			);
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		E1FE7F911FC25C0E001FB3A5 = {
@@ -176,8 +195,8 @@
 		E1FE7FCF1FC25E4C001FB3A5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E18ECCF51FD20C9C008631DC /* Weather View Controller */,
 				E1FE7FD01FC25E95001FB3A5 /* Root View Controller */,
+				E18ECCF51FD20C9C008631DC /* Weather View Controller */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -359,6 +378,7 @@
 			files = (
 				E1FE7FD71FC3BD63001FB3A5 /* NetworkManager.swift in Sources */,
 				E18ECCF91FD214CE008631DC /* WeatherViewController.swift in Sources */,
+				E18ECD071FD3582B008631DC /* WetaherDayTableViewCell.swift in Sources */,
 				E18ECCFF1FD344B4008631DC /* JSONDecodable.swift in Sources */,
 				E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */,
 				E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */,
