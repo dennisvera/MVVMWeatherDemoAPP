@@ -284,6 +284,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40J-zc-Pl7">
+                                        <rect key="frame" x="225" y="90" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nOl-va-N7A" userLabel="Icon Image View">
                                         <rect key="frame" x="157" y="70" width="60" height="60"/>
                                         <constraints>
@@ -293,12 +299,6 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbm-5i-hWO">
                                         <rect key="frame" x="20" y="130" width="335" height="61.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40J-zc-Pl7">
-                                        <rect key="frame" x="225" y="90" width="142" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -355,6 +355,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YyF-Cp-BVN"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="gTy-jd-5JZ" id="7MA-zN-5uX"/>
+                        <outlet property="dateLabel" destination="l81-zj-TaX" id="Opw-yI-Rrx"/>
+                        <outlet property="descriptionLabel" destination="Jbm-5i-hWO" id="ZSn-cv-Dxz"/>
+                        <outlet property="iconImageView" destination="nOl-va-N7A" id="o5S-p5-LvV"/>
+                        <outlet property="messageLabel" destination="32H-sA-cWd" id="rLl-vZ-gaL"/>
+                        <outlet property="temperatureLabel" destination="8tH-mf-dBQ" id="9a7-rc-gQH"/>
+                        <outlet property="timeLabel" destination="40J-zc-Pl7" id="sQu-pc-SPF"/>
+                        <outlet property="weatherDataContainer" destination="Qq6-jg-lt2" id="Be3-aZ-2l4"/>
+                        <outlet property="windSpeedLabel" destination="40J-zc-Pl7" id="iuD-l4-pBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcG-mr-ysx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

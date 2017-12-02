@@ -16,10 +16,21 @@ protocol DayViewControllerDelegate {
 class DayViewController: WeatherViewController {
     
     // MARK: - Properties
-    
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var temperatureLabel: UILabel!
+    @IBOutlet var windSpeedLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var iconImageView: UIImageView!
     
     // MARK: -
     
     var delegate: DayViewControllerDelegate?
+    
+    //MARK: -
+    
+//    var now: WeatherData? {
+//
+//    }
     
 }

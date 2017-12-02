@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E18ECCF71FD20CD3008631DC /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECCF61FD20CD3008631DC /* DayViewController.swift */; };
 		E18ECCF91FD214CE008631DC /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECCF81FD214CE008631DC /* WeatherViewController.swift */; };
+		E18ECCFC1FD230AB008631DC /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18ECCFB1FD230AB008631DC /* WeatherData.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		E18ECCF61FD20CD3008631DC /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		E18ECCF81FD214CE008631DC /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		E18ECCFB1FD230AB008631DC /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = "Weather View Controller";
 			sourceTree = "<group>";
 		};
+		E18ECCFA1FD23029008631DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E18ECCFB1FD230AB008631DC /* WeatherData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E1FE7F911FC25C0E001FB3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 				E1FE7FCF1FC25E4C001FB3A5 /* View Controllers */,
 				E1FE7FD21FC25EBB001FB3A5 /* Storyboards */,
 				E1FE7FD31FC25EF6001FB3A5 /* Resources */,
+				E18ECCFA1FD23029008631DC /* Models */,
 				E1FE7FD41FC25F28001FB3A5 /* Supporting Files */,
 			);
 			path = MVVMWeatherDemoAPP;
@@ -336,6 +347,7 @@
 				E18ECCF91FD214CE008631DC /* WeatherViewController.swift in Sources */,
 				E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */,
 				E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */,
+				E18ECCFC1FD230AB008631DC /* WeatherData.swift in Sources */,
 				E18ECCF71FD20CD3008631DC /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
