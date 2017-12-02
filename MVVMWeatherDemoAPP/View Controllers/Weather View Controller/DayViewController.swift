@@ -29,8 +29,75 @@ class DayViewController: WeatherViewController {
     
     //MARK: -
     
-//    var now: WeatherData? {
-//
-//    }
+    var now: WeatherData? {
+        didSet {
+            
+            setupView()
+        }
+    }
+    
+    // MARK: - View Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    // MARK: - Pulbic Interface
+    
+    override func reloadData() {
+        updateView()
+    }
+    
+    // MARK: - View Methods
+    
+    private func setupView() {
+        
+    }
+    
+    private func updateView() {
+        activityIndicatorView.stopAnimating()
+        
+        if let now = now {
+        }
+    }
+    
+    // MARK: -
+    
+    private func updateWetaherDataContainer(withWeatherData weatherData: WeatherData) {
+     weatherDataContainer.isHidden = false
+        
+        var windSpeed = weatherData.windSpeed
+        var temperature = weatherData.temperature
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, MMMM d"
+        dateLabel.text = dateFormatter.string(from: weatherData.time)
+        
+        let timeFormatter = DateFormatter()
+        
+    }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
