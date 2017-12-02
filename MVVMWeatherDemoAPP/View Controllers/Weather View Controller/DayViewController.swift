@@ -13,9 +13,13 @@ protocol DayViewControllerDelegate {
     func controllerDidTapLocationButton(controller: DayViewController)
 }
 
-class DayViewController {
+class DayViewController: WeatherViewController {
     
     // MARK: - Properties
     
+    
+    // MARK: -
+    
+    var delegate: DayViewControllerDelegate?
     
 }
