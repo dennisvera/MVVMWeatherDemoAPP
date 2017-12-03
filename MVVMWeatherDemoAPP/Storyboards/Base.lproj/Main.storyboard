@@ -257,6 +257,9 @@
                                             <constraint firstAttribute="height" constant="44" id="pcR-wx-CWl"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="button-location-normal"/>
+                                        <connections>
+                                            <action selector="didTapLocationButton:" destination="rQL-GY-zo6" eventType="touchUpInside" id="9YX-8w-MAE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA9-0C-78u">
                                         <rect key="frame" x="323" y="8" width="44" height="44"/>
@@ -265,6 +268,9 @@
                                             <constraint firstAttribute="width" constant="44" id="ubj-b3-EZd"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="button-settings-normal"/>
+                                        <connections>
+                                            <action selector="didTapSettingsButton:" destination="rQL-GY-zo6" eventType="touchUpInside" id="YoX-HO-OkQ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l81-zj-TaX">
                                         <rect key="frame" x="60" y="8" width="255" height="26.5"/>
