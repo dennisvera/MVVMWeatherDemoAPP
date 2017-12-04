@@ -6,7 +6,7 @@
 //  Copyright © 2017 Dennis Vera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct DayViewViewModel {
     
@@ -14,10 +14,14 @@ struct DayViewViewModel {
     
     let weatherData: WeatherData
     
+    // MARK: -
+    
+    private let dateFormatter = DateFormatter()
+    private let timeFormatter = DateFormatter()
+    
+    // MARK: -
+    
     var date: String {
-        // Initialize Date Formatter
-        let dateFormatter = DateFormatter()
-        
         // Configure Date Formatter
         dateFormatter.dateFormat = "EEE, MMMM d"
         
@@ -25,13 +29,10 @@ struct DayViewViewModel {
     }
     
     var time: String {
-        // Initialize Date Formatter
-        let dateFormatter = DateFormatter()
-        
         // Configure Date Formatter
-        dateFormatter.dateFormat = UserDefaults.timeNotation().timeFormat
+        timeFormatter.dateFormat = UserDefaults.timeNotation().timeFormat
         
-        return dateFormatter.string(from: weatherData.time)
+        return timeFormatter.string(from: weatherData.time)
     }
     
     var summary: String {
@@ -61,4 +62,11 @@ struct DayViewViewModel {
         }
     }
     
+    var image: UIImage? {
+        return UIImage.imageForIcon(withName: weatherData.icon)
+    }
+    
 }
+
+
+
