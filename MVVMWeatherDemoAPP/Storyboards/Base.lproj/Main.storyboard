@@ -56,16 +56,16 @@
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="ZvJ-u2-NTq">
             <objects>
-                <tableViewController id="E7C-Ap-mbC" sceneMemberID="viewController">
+                <tableViewController id="E7C-Ap-mbC" customClass="SettingsViewController" customModule="MVVMWeatherDemoAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DXY-cB-jLB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lJg-nJ-FXo" userLabel="Settings Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="lJg-nJ-FXo" userLabel="Settings Cell" customClass="SettingsTableViewCell" customModule="MVVMWeatherDemoAPP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJg-nJ-FXo" id="SXj-nr-v1C">
@@ -85,6 +85,9 @@
                                         <constraint firstItem="icn-8T-U4p" firstAttribute="leading" secondItem="SXj-nr-v1C" secondAttribute="leading" constant="8" id="aWa-0D-nsa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mainLabel" destination="icn-8T-U4p" id="8CD-aT-j7k"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
