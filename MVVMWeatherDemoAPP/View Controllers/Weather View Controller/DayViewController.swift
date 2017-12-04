@@ -30,7 +30,7 @@ class DayViewController: WeatherViewController {
     
     //MARK: -
     
-    var now: WeatherData? {
+    var viewModel: DayViewViewModel? {
         didSet {
             updateView()
         }

@@ -49,7 +49,7 @@
                         <outlet property="dayViewController" destination="1sE-c4-pMk" id="Rnm-1Y-LVE"/>
                         <outlet property="weekViewController" destination="zTx-ro-Onn" id="kAQ-kI-Dbx"/>
                         <segue destination="YPG-kV-Fg3" kind="presentation" identifier="SegueSettingsView" id="Kjk-4E-Roz"/>
-                        <segue destination="EeL-Ms-rgk" kind="presentation" id="8jD-HS-G0C"/>
+                        <segue destination="EeL-Ms-rgk" kind="presentation" identifier="SegueLocationsView" id="8jD-HS-G0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -47,7 +47,6 @@ struct DayViewViewModel {
             return String(format: "%.1f °F", temperature)
         case .celsius:
             return String(format: "%.1f °C", temperature.toCelcius())
-            
         }
     }
     
@@ -67,6 +66,5 @@ struct DayViewViewModel {
     }
     
 }
-
 
 
