@@ -13,7 +13,7 @@ protocol LocationsViewControllerDelegate {
     func controller(_ controller: LocationsViewController, didSelectLocation location: CLLocation)
 }
 
-class LocationsViewController: UIVIewController {
+class LocationsViewController: UIViewController {
     
     // MARK: - Constants
     

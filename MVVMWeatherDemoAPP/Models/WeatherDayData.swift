@@ -14,7 +14,8 @@ struct WeatherDayData {
     let icon: String
     let windSpeed: Double
     let temperatureMin: Double
-    let temperaureMax: Double
+    let temperatureMax: Double
+    
 }
 
 extension WeatherDayData: JSONDecodable {
@@ -22,10 +23,12 @@ extension WeatherDayData: JSONDecodable {
     init(decoder: JSONDecoder) throws {
         self.icon = try decoder.decode(key: "icon")
         self.windSpeed = try decoder.decode(key: "windSpeed")
-        self.temperatureMin = try decoder.decode(key: "temperarureMin")
-        self.temperaureMax = try decoder.decode(key: "temperatureMax")
+        self.temperatureMin = try decoder.decode(key: "temperatureMin")
+        self.temperatureMax = try decoder.decode(key: "temperatureMax")
         
         let time: Double = try decoder.decode(key: "time")
         self.time = Date(timeIntervalSince1970: time)
     }
+    
 }
+

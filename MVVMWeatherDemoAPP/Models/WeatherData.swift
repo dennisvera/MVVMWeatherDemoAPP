@@ -20,7 +20,8 @@ struct WeatherData {
     let icon: String
     let summary: String
     
-    let dailyData: [WeatherData]
+    let dailyData: [WeatherDayData]
+    
 }
 
 extension WeatherData: JSONDecodable {
@@ -38,4 +39,6 @@ extension WeatherData: JSONDecodable {
         let time: Double = try decoder.decode(key: "currently.time")
         self.time = Date(timeIntervalSince1970: time)
     }
+    
 }
+

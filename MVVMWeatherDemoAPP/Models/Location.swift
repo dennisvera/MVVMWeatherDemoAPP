@@ -6,6 +6,7 @@
 //  Copyright © 2017 Dennis Vera. All rights reserved.
 //
 
+
 import Foundation
 import CoreLocation
 
@@ -16,6 +17,7 @@ struct Location {
         static let name = "name"
         static let latitude = "latitude"
         static let longitude = "longitude"
+        
     }
     
     // MARK: - Properties
@@ -34,12 +36,36 @@ struct Location {
     
     var asDictionary: [String: Any] {
         return [ Keys.name: name,
-                 Keys.latitude: latitude,
+                 Keys.latitude : latitude,
                  Keys.longitude: longitude ]
     }
+    
 }
 
 extension Location {
     
+    // MARK: - Initialization
+    
+    init?(dictionary: [String: Any]) {
+        guard let name = dictionary[Keys.name] as? String else { return nil }
+        guard let latitude = dictionary[Keys.latitude] as? Double else { return nil }
+        guard let longitude = dictionary[Keys.longitude] as? Double else { return nil }
+        
+        self.name = name
+        self.latitude = latitude
+        self.longitude = longitude
+    }
     
 }
+
+extension Location: Equatable {
+    
+    static func ==(lhs: Location, rhs: Location) -> Bool {
+        return
+            lhs.name == rhs.name &&
+                lhs.latitude == rhs.latitude &&
+                lhs.longitude == rhs.longitude
+    }
+    
+}
+

@@ -80,7 +80,7 @@ class RootViewController: UIViewController {
             
             // Update Week View Controller
             self.weekViewController = destination
-        case SegueSettingsView:
+        case segueSettingsView:
             guard let navigationController = segue.destination as? UINavigationController else {
                 fatalError("Unexpected Destination View Controller")
             }
@@ -210,7 +210,7 @@ extension RootViewController: CLLocationManagerDelegate {
 extension RootViewController: DayViewControllerDelegate {
     
     func controllerDidTapSettingsButton(controller: DayViewController) {
-        performSegue(withIdentifier: SegueSettingsView, sender: self)
+        performSegue(withIdentifier: segueSettingsView, sender: self)
     }
     
     func controllerDidTapLocationButton(controller: DayViewController) {

@@ -11,6 +11,7 @@ import Foundation
 protocol JSONDecodable {
     
     init(decoder: JSONDecoder) throws
+    
 }
 
 enum JSONDecoderError: Error {

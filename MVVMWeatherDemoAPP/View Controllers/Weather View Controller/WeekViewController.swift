@@ -155,7 +155,7 @@ extension WeekViewController: UITableViewDataSource {
                 cell.windSpeedLabel.text = String(format: "%.f MPH", windSpeed)
             }
             
-            cell.iconImageView.image = imageForIcon(withName: weatherData.icon)
+            cell.iconImageView.image = ImageForIcon(withName: weatherData.icon)
         }
         
         return cell
