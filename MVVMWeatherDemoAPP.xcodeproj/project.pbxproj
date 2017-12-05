@@ -25,6 +25,7 @@
 		E19C43631FD6142500639E87 /* LocationRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43621FD6142100639E87 /* LocationRepresentable.swift */; };
 		E19C43671FD614AD00639E87 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */; };
 		E19C436A1FD6188E00639E87 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43691FD6188B00639E87 /* AddLocationViewController.swift */; };
+		E19C436D1FD61DEB00639E87 /* LocationsViewLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C436C1FD61DEA00639E87 /* LocationsViewLocationViewModel.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		E19C43621FD6142100639E87 /* LocationRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentable.swift; sourceTree = "<group>"; };
 		E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		E19C43691FD6188B00639E87 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		E19C436C1FD61DEA00639E87 /* LocationsViewLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewLocationViewModel.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -188,10 +190,11 @@
 		E19C435F1FD5CAED00639E87 /* Locations View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E19C43681FD6156D00639E87 /* Add Location View Controller */,
 				E19C43601FD5CB6C00639E87 /* LocationsViewController.swift */,
 				E19C43641FD6143600639E87 /* Protocols */,
+				E19C436B1FD61DAC00639E87 /* View Models */,
 				E19C43651FD6146E00639E87 /* Table VIew Cells */,
+				E19C43681FD6156D00639E87 /* Add Location View Controller */,
 			);
 			path = "Locations View Controller";
 			sourceTree = "<group>";
@@ -218,6 +221,14 @@
 				E19C43691FD6188B00639E87 /* AddLocationViewController.swift */,
 			);
 			path = "Add Location View Controller";
+			sourceTree = "<group>";
+		};
+		E19C436B1FD61DAC00639E87 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E19C436C1FD61DEA00639E87 /* LocationsViewLocationViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		E1FE7F911FC25C0E001FB3A5 = {
@@ -487,6 +498,7 @@
 				E18ECCFC1FD230AB008631DC /* WeatherData.swift in Sources */,
 				E18ECD101FD3637D008631DC /* Conversions.swift in Sources */,
 				E18ECCF71FD20CD3008631DC /* DayViewController.swift in Sources */,
+				E19C436D1FD61DEB00639E87 /* LocationsViewLocationViewModel.swift in Sources */,
 				E18ECD011FD34C2B008631DC /* WeatherDayData.swift in Sources */,
 				E19C43561FD4C8A000639E87 /* UIImage.swift in Sources */,
 			);
