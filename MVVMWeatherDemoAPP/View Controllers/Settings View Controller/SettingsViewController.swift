@@ -14,7 +14,7 @@ protocol SettingsViewControllerDelegate {
     func controllerDidChangeTemperatureNotation(controller: SettingsViewController)
 }
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: UIViewController {
     
     // MARK: - Properties
     

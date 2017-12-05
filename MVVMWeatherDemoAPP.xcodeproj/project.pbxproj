@@ -21,6 +21,10 @@
 		E19C43581FD5C1BD00639E87 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43571FD5C1BD00639E87 /* WeekViewController.swift */; };
 		E19C435B1FD5C53C00639E87 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C435A1FD5C53C00639E87 /* SettingsViewController.swift */; };
 		E19C435E1FD5C59B00639E87 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C435D1FD5C59B00639E87 /* SettingsTableViewCell.swift */; };
+		E19C43611FD5CB6D00639E87 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43601FD5CB6C00639E87 /* LocationsViewController.swift */; };
+		E19C43631FD6142500639E87 /* LocationRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43621FD6142100639E87 /* LocationRepresentable.swift */; };
+		E19C43671FD614AD00639E87 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */; };
+		E19C436A1FD6188E00639E87 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43691FD6188B00639E87 /* AddLocationViewController.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -63,6 +67,10 @@
 		E19C43571FD5C1BD00639E87 /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
 		E19C435A1FD5C53C00639E87 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E19C435D1FD5C59B00639E87 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		E19C43601FD5CB6C00639E87 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		E19C43621FD6142100639E87 /* LocationRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentable.swift; sourceTree = "<group>"; };
+		E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		E19C43691FD6188B00639E87 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +185,41 @@
 			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
+		E19C435F1FD5CAED00639E87 /* Locations View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19C43681FD6156D00639E87 /* Add Location View Controller */,
+				E19C43601FD5CB6C00639E87 /* LocationsViewController.swift */,
+				E19C43641FD6143600639E87 /* Protocols */,
+				E19C43651FD6146E00639E87 /* Table VIew Cells */,
+			);
+			path = "Locations View Controller";
+			sourceTree = "<group>";
+		};
+		E19C43641FD6143600639E87 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E19C43621FD6142100639E87 /* LocationRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E19C43651FD6146E00639E87 /* Table VIew Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */,
+			);
+			path = "Table VIew Cells";
+			sourceTree = "<group>";
+		};
+		E19C43681FD6156D00639E87 /* Add Location View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E19C43691FD6188B00639E87 /* AddLocationViewController.swift */,
+			);
+			path = "Add Location View Controller";
+			sourceTree = "<group>";
+		};
 		E1FE7F911FC25C0E001FB3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +288,7 @@
 				E1FE7FD01FC25E95001FB3A5 /* Root View Controller */,
 				E19C43591FD5C4DB00639E87 /* Settings View Controller */,
 				E18ECCF51FD20C9C008631DC /* Weather View Controller */,
+				E19C435F1FD5CAED00639E87 /* Locations View Controller */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -430,11 +474,15 @@
 				E18ECD071FD3582B008631DC /* WetaherDayTableViewCell.swift in Sources */,
 				E18ECD0E1FD36345008631DC /* UserDefaults.swift in Sources */,
 				E18ECCFF1FD344B4008631DC /* JSONDecodable.swift in Sources */,
+				E19C43671FD614AD00639E87 /* LocationTableViewCell.swift in Sources */,
 				E18ECD0B1FD35E40008631DC /* DayViewViewModel.swift in Sources */,
+				E19C43631FD6142500639E87 /* LocationRepresentable.swift in Sources */,
 				E19C435B1FD5C53C00639E87 /* SettingsViewController.swift in Sources */,
+				E19C436A1FD6188E00639E87 /* AddLocationViewController.swift in Sources */,
 				E19C43521FD4BD8700639E87 /* Location.swift in Sources */,
 				E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */,
 				E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */,
+				E19C43611FD5CB6D00639E87 /* LocationsViewController.swift in Sources */,
 				E19C435E1FD5C59B00639E87 /* SettingsTableViewCell.swift in Sources */,
 				E18ECCFC1FD230AB008631DC /* WeatherData.swift in Sources */,
 				E18ECD101FD3637D008631DC /* Conversions.swift in Sources */,
