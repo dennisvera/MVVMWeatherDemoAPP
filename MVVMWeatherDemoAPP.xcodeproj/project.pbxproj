@@ -26,6 +26,7 @@
 		E19C43671FD614AD00639E87 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */; };
 		E19C436A1FD6188E00639E87 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C43691FD6188B00639E87 /* AddLocationViewController.swift */; };
 		E19C436D1FD61DEB00639E87 /* LocationsViewLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C436C1FD61DEA00639E87 /* LocationsViewLocationViewModel.swift */; };
+		E1B8F7791FD6403300E9D763 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8F7781FD6403200E9D763 /* DataManager.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		E19C43661FD614AD00639E87 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		E19C43691FD6188B00639E87 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		E19C436C1FD61DEA00639E87 /* LocationsViewLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewLocationViewModel.swift; sourceTree = "<group>"; };
+		E1B8F7781FD6403200E9D763 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		E1B8F7771FD63FE100E9D763 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1B8F7781FD6403200E9D763 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		E1FE7F911FC25C0E001FB3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 				E1FE7FD21FC25EBB001FB3A5 /* Storyboards */,
 				E18ECD0C1FD3630B008631DC /* Extensions */,
 				E1FE7FD31FC25EF6001FB3A5 /* Resources */,
+				E1B8F7771FD63FE100E9D763 /* Managers */,
 				E18ECCFD1FD3447F008631DC /* Protocols */,
 				E18ECCFA1FD23029008631DC /* Models */,
 				E1FE7FD41FC25F28001FB3A5 /* Supporting Files */,
@@ -484,6 +495,7 @@
 				E18ECCF91FD214CE008631DC /* WeatherViewController.swift in Sources */,
 				E18ECD071FD3582B008631DC /* WetaherDayTableViewCell.swift in Sources */,
 				E18ECD0E1FD36345008631DC /* UserDefaults.swift in Sources */,
+				E1B8F7791FD6403300E9D763 /* DataManager.swift in Sources */,
 				E18ECCFF1FD344B4008631DC /* JSONDecodable.swift in Sources */,
 				E19C43671FD614AD00639E87 /* LocationTableViewCell.swift in Sources */,
 				E18ECD0B1FD35E40008631DC /* DayViewViewModel.swift in Sources */,
