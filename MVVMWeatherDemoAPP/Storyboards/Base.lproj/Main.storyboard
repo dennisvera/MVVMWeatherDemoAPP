@@ -91,6 +91,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="y5o-Zh-Y9Q" id="kAQ-Jk-Hmf"/>
+                                    <outlet property="delegate" destination="y5o-Zh-Y9Q" id="eA5-U5-d15"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,6 +113,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="qoh-E1-9FZ" id="kgq-fo-gg9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNj-oA-hT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RUn-Pl-P5I" userLabel="Exit" sceneMemberID="exit"/>
@@ -135,7 +142,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="drp-Cp-o5F" userLabel="Location Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" id="drp-Cp-o5F" userLabel="Location Cell" customClass="LocationTableViewCell" customModule="MVVMWeatherDemoAPP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="drp-Cp-o5F" id="R0t-sf-FVI">
@@ -155,6 +162,9 @@
                                                 <constraint firstItem="133-ZQ-5li" firstAttribute="centerY" secondItem="R0t-sf-FVI" secondAttribute="centerY" id="Vy1-Yl-Uou"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainLabel" destination="133-ZQ-5li" id="lpM-OF-8ba"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -320,7 +330,7 @@
                                             <constraint firstAttribute="width" constant="44" id="Liy-FI-abQ"/>
                                             <constraint firstAttribute="height" constant="44" id="pcR-wx-CWl"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="button-location-normal"/>
+                                        <state key="normal" image="button-location-normal"/>
                                         <connections>
                                             <action selector="didTapLocationButton:" destination="rQL-GY-zo6" eventType="touchUpInside" id="9YX-8w-MAE"/>
                                         </connections>
@@ -331,7 +341,7 @@
                                             <constraint firstAttribute="height" constant="44" id="2JA-oJ-unU"/>
                                             <constraint firstAttribute="width" constant="44" id="ubj-b3-EZd"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="button-settings-normal"/>
+                                        <state key="normal" image="button-settings-normal"/>
                                         <connections>
                                             <action selector="didTapSettingsButton:" destination="rQL-GY-zo6" eventType="touchUpInside" id="YoX-HO-OkQ"/>
                                         </connections>
