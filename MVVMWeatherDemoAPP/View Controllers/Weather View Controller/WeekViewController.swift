@@ -24,7 +24,7 @@ class WeekViewController: WeatherViewController {
     
     // MARK: -
     
-    var week: [WeatherDayData]? {
+    var viewModel: WeekViewViewModel? {
         didSet {
             updateView()
         }
