@@ -49,7 +49,6 @@ class SettingsViewController: UIViewController {
     private func setupTableView() {
         tableView.separatorInset = UIEdgeInsets.zero
     }
-    
 }
 
 extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
@@ -66,7 +65,6 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         static var count: Int {
             return (Section.temperature.rawValue + 1)
         }
-        
     }
     
     // MARK: - Table View Data Source Methods
@@ -86,32 +84,11 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch section {
         case .time:
-            cell.mainLabel.text = (indexPath.row == 0) ? "12 Hour" : "24 Hour"
-            
-            let timeNotation = UserDefaults.timeNotation()
-            if indexPath.row == timeNotation.rawValue {
-                cell.accessoryType = .checkmark
-            } else {
-                cell.accessoryType = .none
-            }
+            guard let _ = TimeNotation(rawValue: indexPath.row) else { fatalError("Unexpected Index Path") }
         case .units:
             cell.mainLabel.text = (indexPath.row == 0) ? "Imperial" : "Metric"
-            
-            let unitsNotation = UserDefaults.unitsNotation()
-            if indexPath.row == unitsNotation.rawValue {
-                cell.accessoryType = .checkmark
-            } else {
-                cell.accessoryType = .none
-            }
         case .temperature:
             cell.mainLabel.text = (indexPath.row == 0) ? "Fahrenheit" : "Celcius"
-            
-            let temperatureNotation = UserDefaults.temperatureNotation()
-            if indexPath.row == temperatureNotation.rawValue {
-                cell.accessoryType = .checkmark
-            } else {
-                cell.accessoryType = .none
-            }
         }
         
         return cell
