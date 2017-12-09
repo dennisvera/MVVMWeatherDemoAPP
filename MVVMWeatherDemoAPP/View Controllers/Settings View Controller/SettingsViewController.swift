@@ -84,7 +84,16 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         
         switch section {
         case .time:
-            guard let _ = TimeNotation(rawValue: indexPath.row) else { fatalError("Unexpected Index Path") }
+            guard let timeNotation = TimeNotation(rawValue: indexPath.row) else {
+                fatalError("Unexpected Index Path")
+            }
+            
+            // Initialize View Model
+            let viewModel = SettingsViewTimeViewModel(timeNotation: timeNotation)
+            
+            // Configre Cell
+            cell.mainLabel.text = viewModel.text
+            cell.accessoryType = viewModel.accesoryType
         case .units:
             cell.mainLabel.text = (indexPath.row == 0) ? "Imperial" : "Metric"
         case .temperature:
