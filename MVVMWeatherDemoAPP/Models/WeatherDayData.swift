@@ -15,7 +15,6 @@ struct WeatherDayData {
     let windSpeed: Double
     let temperatureMin: Double
     let temperatureMax: Double
-    
 }
 
 extension WeatherDayData: JSONDecodable {

@@ -30,4 +30,5 @@ class LocationTableViewCell: UITableViewCell {
         mainLabel.text = viewModel.text
     }
     
+    
 }
