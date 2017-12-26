@@ -29,5 +29,6 @@ extension WeatherDayData: JSONDecodable {
         self.time = Date(timeIntervalSince1970: time)
     }
     
+    
 }
 
