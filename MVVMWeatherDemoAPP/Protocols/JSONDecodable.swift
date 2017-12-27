@@ -130,5 +130,4 @@ struct JSONDecoder {
         
         throw JSONDecoderError.keyPathNotFound(keyPath)
     }
-    
 }

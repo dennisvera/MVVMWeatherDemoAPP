@@ -23,5 +23,6 @@ struct API {
     static var AuthenticatedBaseURL: URL {
         return BaseURL.appendingPathComponent(APIKey)
     }
+    
 }
 

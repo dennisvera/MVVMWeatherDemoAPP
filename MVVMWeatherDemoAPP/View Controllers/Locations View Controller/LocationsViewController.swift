@@ -234,4 +234,5 @@ extension LocationsViewController: AddLocationViewControllerDelegate {
         // Update Table View
         tableView.reloadData()
     }
+    
 }

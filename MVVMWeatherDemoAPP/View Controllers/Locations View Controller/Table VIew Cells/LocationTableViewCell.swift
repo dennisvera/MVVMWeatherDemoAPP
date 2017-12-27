@@ -29,4 +29,5 @@ class LocationTableViewCell: UITableViewCell {
     func configure(withViewModel viewModel: LocationRepresentable) {
         mainLabel.text = viewModel.text
     }
+    
 }

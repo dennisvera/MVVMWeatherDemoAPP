@@ -66,6 +66,5 @@ extension Location: Equatable {
                 lhs.latitude == rhs.latitude &&
                 lhs.longitude == rhs.longitude
     }
-    
 }
 
