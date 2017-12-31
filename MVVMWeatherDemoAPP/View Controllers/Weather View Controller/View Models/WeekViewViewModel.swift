@@ -82,6 +82,10 @@ struct WeekViewViewModel {
     }
     
     
+    
+    
+    
+    
     // MARK: - Helper Methods
     
     private func format(temperature: Double) -> String {
@@ -92,6 +96,8 @@ struct WeekViewViewModel {
             return String(format: "%.0f °C", temperature.toCelcius())
         }
     }
+    
+    
     
 }
 
