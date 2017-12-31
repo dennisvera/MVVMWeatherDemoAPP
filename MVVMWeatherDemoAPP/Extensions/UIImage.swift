@@ -20,4 +20,5 @@ extension UIImage {
         default: return UIImage(named: "clear-day")
         }
     }
+    
 }
