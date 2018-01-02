@@ -70,6 +70,7 @@ class RootViewController: UIViewController {
             
             // Update Day View Controller
             self.dayViewController = destination
+            
         case segueWeekView:
             guard let destination = segue.destination as? WeekViewController else {
                 fatalError("Unexpected Destination View Controller")
@@ -80,6 +81,7 @@ class RootViewController: UIViewController {
             
             // Update Week View Controller
             self.weekViewController = destination
+            
         case segueSettingsView:
             guard let navigationController = segue.destination as? UINavigationController else {
                 fatalError("Unexpected Destination View Controller")
@@ -91,6 +93,7 @@ class RootViewController: UIViewController {
             
             // Configure Destination
             destination.delegate = self
+            
         case segueLocationsView:
             guard let navigationController = segue.destination as? UINavigationController else {
                 fatalError("Unexpected Destination View Controller")

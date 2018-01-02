@@ -16,7 +16,6 @@ struct WeekViewViewModel {
     
     // MARK: -
     
-    private let dayFormatter = DateFormatter()
     private let dateFormatter = DateFormatter()
     
     // MARK: -
@@ -36,9 +35,9 @@ struct WeekViewViewModel {
         let weatherDayData = weatherData[index]
         
         // Configure Date Formatter
-        dayFormatter.dateFormat = "EEEE"
+        dateFormatter.dateFormat = "EEEE"
         
-        return dayFormatter.string(from: weatherDayData.time)
+        return dateFormatter.string(from: weatherDayData.time)
     }
     
     func date(for index: Int) -> String {
@@ -46,7 +45,7 @@ struct WeekViewViewModel {
         let weatherDayData = weatherData[index]
         
         // Configure Date Formatter
-        dayFormatter.dateFormat = "MMMM d"
+        dateFormatter.dateFormat = "MMMM d"
         
         return dateFormatter.string(from: weatherDayData.time)
     }
