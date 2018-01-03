@@ -23,12 +23,16 @@ struct SettingsViewTemperatureViewModel {
         }
     }
     
-    var accesoryType: UITableViewCellAccessoryType {
+    var accessoryType: UITableViewCellAccessoryType {
         if UserDefaults.temperatureNotation() == temperatureNotation {
             return .checkmark
         } else {
             return .none
         }
     }
+    
+}
+
+extension SettingsViewTemperatureViewModel: SettingsRepresentable {
     
 }

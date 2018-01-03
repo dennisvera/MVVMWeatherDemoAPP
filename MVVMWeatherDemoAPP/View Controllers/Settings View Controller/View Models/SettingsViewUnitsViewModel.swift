@@ -14,7 +14,7 @@ struct SettingsViewUnitsViewModel {
     
     let unitsNotation: UnitsNotation
     
-    // MARK: -
+    // MARK: - Public Interface
     
     var text: String {
         switch unitsNotation {
@@ -22,13 +22,17 @@ struct SettingsViewUnitsViewModel {
         case .metric: return "Metric"
         }
     }
-
-    var accesoryType: UITableViewCellAccessoryType {
+    
+    var accessoryType: UITableViewCellAccessoryType {
         if UserDefaults.unitsNotation() == unitsNotation {
             return .checkmark
         } else {
             return .none
         }
     }
+    
+}
+
+extension SettingsViewUnitsViewModel: SettingsRepresentable {
     
 }

@@ -31,6 +31,7 @@
 		E1B8F77E1FDA0E2F00E9D763 /* SettingsViewTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8F77D1FDA0E2D00E9D763 /* SettingsViewTimeViewModel.swift */; };
 		E1C1B8BA1FFC5B2200FA7B31 /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1B8B91FFC5B2200FA7B31 /* SettingsViewUnitsViewModel.swift */; };
 		E1C1B8BC1FFC5F3B00FA7B31 /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1B8BB1FFC5F3B00FA7B31 /* SettingsViewTemperatureViewModel.swift */; };
+		E1C1B8BF1FFC65AB00FA7B31 /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1B8BE1FFC65AB00FA7B31 /* SettingsRepresentable.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		E1B8F77D1FDA0E2D00E9D763 /* SettingsViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModel.swift; sourceTree = "<group>"; };
 		E1C1B8B91FFC5B2200FA7B31 /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		E1C1B8BB1FFC5F3B00FA7B31 /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
+		E1C1B8BE1FFC65AB00FA7B31 /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				E19C435A1FD5C53C00639E87 /* SettingsViewController.swift */,
+				E1C1B8BD1FFC652400FA7B31 /* Protocols */,
 				E1B8F77C1FDA0DB100E9D763 /* View Models */,
 				E19C435C1FD5C57500639E87 /* Table View Cells */,
 			);
@@ -259,6 +262,14 @@
 				E1C1B8BB1FFC5F3B00FA7B31 /* SettingsViewTemperatureViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E1C1B8BD1FFC652400FA7B31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1C1B8BE1FFC65AB00FA7B31 /* SettingsRepresentable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E1FE7F911FC25C0E001FB3A5 = {
@@ -525,6 +536,7 @@
 				E19C43631FD6142500639E87 /* LocationRepresentable.swift in Sources */,
 				E1B8F77E1FDA0E2F00E9D763 /* SettingsViewTimeViewModel.swift in Sources */,
 				E19C435B1FD5C53C00639E87 /* SettingsViewController.swift in Sources */,
+				E1C1B8BF1FFC65AB00FA7B31 /* SettingsRepresentable.swift in Sources */,
 				E19C436A1FD6188E00639E87 /* AddLocationViewController.swift in Sources */,
 				E19C43521FD4BD8700639E87 /* Location.swift in Sources */,
 				E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */,

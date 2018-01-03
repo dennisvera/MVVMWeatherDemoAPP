@@ -23,12 +23,16 @@ struct SettingsViewTimeViewModel {
         }
     }
     
-    var accesoryType: UITableViewCellAccessoryType {
+    var accessoryType: UITableViewCellAccessoryType {
         if UserDefaults.timeNotation() == timeNotation {
             return .checkmark
         } else {
             return .none
         }
     }
+    
+}
+
+extension SettingsViewTimeViewModel: SettingsRepresentable {
     
 }
