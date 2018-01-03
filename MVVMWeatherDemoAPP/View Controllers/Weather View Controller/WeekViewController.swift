@@ -61,7 +61,6 @@ class WeekViewController: WeatherViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "Cloudy was unable to fetch weather data."
-            
         }
     }
     
@@ -115,13 +114,8 @@ extension WeekViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as? WeatherDayTableViewCell else { fatalError("Unexpected Table View Cell") }
         
-        if let viewModel = viewModel {
-            // Configure Cell
-            cell.dayLabel.text = viewModel.day(for: indexPath.row)
-            cell.dateLabel.text = viewModel.date(for: indexPath.row)
-            cell.iconImageView.image = viewModel.image(for: indexPath.row)
-            cell.windSpeedLabel.text = viewModel.windSpeed(for: indexPath.row)
-            cell.temperatureLabel.text = viewModel.temperature(for: indexPath.row)
+        if let weatherDayRepresentable = viewModel?.viewModel(for: indexPath.row) {
+            cell.configure(withViewModel: weatherDayRepresentable)
         }
         
         return cell
