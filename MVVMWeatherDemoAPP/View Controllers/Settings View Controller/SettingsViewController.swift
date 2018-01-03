@@ -94,10 +94,29 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
             // Configre Cell
             cell.mainLabel.text = viewModel.text
             cell.accessoryType = viewModel.accesoryType
+            
         case .units:
-            cell.mainLabel.text = (indexPath.row == 0) ? "Imperial" : "Metric"
+            guard let unitsNotation = UnitsNotation(rawValue: indexPath.row) else {
+                fatalError("Unexpected Index Path")
+            }
+            
+            // Initialize View Model
+            let viewModel = SettingsViewUnitsViewModel(unitsNotation: unitsNotation)
+            
+            // Configre Cell
+            cell.mainLabel.text = viewModel.text
+            cell.accessoryType = viewModel.accesoryType
+            
         case .temperature:
-            cell.mainLabel.text = (indexPath.row == 0) ? "Fahrenheit" : "Celcius"
+            guard let temperatureNotation = TemperatureNotation(rawValue: indexPath.row) else {
+                fatalError("Unexpected Index Path")
+            }
+            
+            // Initialize View Model
+            let viewModel = SettingsViewTemperatureViewModel(temperatureNotation: temperatureNotation)
+            
+            cell.mainLabel.text = viewModel.text
+            cell.accessoryType = viewModel.accesoryType
         }
         
         return cell

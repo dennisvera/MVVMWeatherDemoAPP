@@ -27,7 +27,7 @@ struct SettingsViewTimeViewModel {
         if UserDefaults.timeNotation() == timeNotation {
             return .checkmark
         } else {
-        return .none
+            return .none
         }
     }
     
