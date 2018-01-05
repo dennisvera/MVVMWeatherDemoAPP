@@ -72,6 +72,7 @@ struct WeatherDayViewViewModel {
 
 extension WeatherDayViewViewModel: WeatherDayRepresentable {
     
+    
 }
 
 

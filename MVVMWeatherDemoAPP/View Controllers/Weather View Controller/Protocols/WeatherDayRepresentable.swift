@@ -16,4 +16,5 @@ protocol WeatherDayRepresentable {
     var windSpeed: String { get }
     var temperature: String { get }
     
+    
 }

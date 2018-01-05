@@ -65,6 +65,7 @@ struct DayViewViewModel {
         return UIImage.imageForIcon(withName: weatherData.icon)
     }
     
+    
 }
 
 
