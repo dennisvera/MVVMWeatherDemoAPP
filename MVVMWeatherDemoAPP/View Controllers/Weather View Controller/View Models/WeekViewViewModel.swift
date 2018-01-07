@@ -28,7 +28,6 @@ struct WeekViewViewModel {
         return WeatherDayViewViewModel(weatherDayData: weatherData[index])
     }
     
-    
 }
 
 
