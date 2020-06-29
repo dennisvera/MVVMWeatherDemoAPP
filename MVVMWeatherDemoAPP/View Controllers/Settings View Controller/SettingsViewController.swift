@@ -89,14 +89,17 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         case .time:
             guard let timeNotation = TimeNotation(rawValue: indexPath.row) else {
                 fatalError("Unexpected Index Path") }
+            
             viewModel = SettingsViewTimeViewModel(timeNotation: timeNotation)
         case .units:
             guard let unitsNotation = UnitsNotation(rawValue: indexPath.row) else {
                 fatalError("Unexpected Index Path")}
+            
             viewModel = SettingsViewUnitsViewModel(unitsNotation: unitsNotation)
         case .temperature:
             guard let temperatureNotation = TemperatureNotation(rawValue: indexPath.row) else {
                 fatalError("Unexpected Index Path")}
+            
             viewModel = SettingsViewTemperatureViewModel(temperatureNotation: temperatureNotation)
         }
         

@@ -70,9 +70,7 @@ struct WeatherDayViewViewModel {
     
 }
 
-extension WeatherDayViewViewModel: WeatherDayRepresentable {
-    
-}
+extension WeatherDayViewViewModel: WeatherDayRepresentable { }
 
 
 
