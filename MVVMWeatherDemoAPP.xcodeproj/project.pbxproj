@@ -35,6 +35,8 @@
 		E1C1B8C11FFD900B00FA7B31 /* WeatherDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1B8C01FFD900B00FA7B31 /* WeatherDayViewViewModel.swift */; };
 		E1C1B8C41FFD97C200FA7B31 /* WeatherDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1B8C31FFD97C200FA7B31 /* WeatherDayRepresentable.swift */; };
 		E1F0A66024AA7D91005F9AAD /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A65F24AA7D91005F9AAD /* SettingsViewTimeViewModelTests.swift */; };
+		E1F0A66224AA84C6005F9AAD /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A66124AA84C6005F9AAD /* SettingsViewUnitsViewModelTests.swift */; };
+		E1F0A66424AA886D005F9AAD /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A66324AA886D005F9AAD /* SettingsViewTemperatureViewModelTests.swift */; };
 		E1FE7F9E1FC25C0E001FB3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */; };
 		E1FE7FA01FC25C0E001FB3A5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */; };
 		E1FE7FA31FC25C0E001FB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1FE7FA11FC25C0E001FB3A5 /* Main.storyboard */; };
@@ -84,6 +86,8 @@
 		E1F0A65124AA7A42005F9AAD /* MVVMWeatherDemoAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMWeatherDemoAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F0A65524AA7A42005F9AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1F0A65F24AA7D91005F9AAD /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
+		E1F0A66124AA84C6005F9AAD /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
+		E1F0A66324AA886D005F9AAD /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
 		E1FE7F9A1FC25C0E001FB3A5 /* MVVMWeatherDemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMWeatherDemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1FE7F9D1FC25C0E001FB3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1FE7F9F1FC25C0E001FB3A5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				E1F0A65F24AA7D91005F9AAD /* SettingsViewTimeViewModelTests.swift */,
+				E1F0A66124AA84C6005F9AAD /* SettingsViewUnitsViewModelTests.swift */,
+				E1F0A66324AA886D005F9AAD /* SettingsViewTemperatureViewModelTests.swift */,
 			);
 			path = "Test Cases";
 			sourceTree = "<group>";
@@ -508,6 +514,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F0A66224AA84C6005F9AAD /* SettingsViewUnitsViewModelTests.swift in Sources */,
+				E1F0A66424AA886D005F9AAD /* SettingsViewTemperatureViewModelTests.swift in Sources */,
 				E1F0A66024AA7D91005F9AAD /* SettingsViewTimeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

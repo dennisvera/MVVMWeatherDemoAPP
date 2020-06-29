@@ -33,6 +33,4 @@ struct SettingsViewUnitsViewModel {
     
 }
 
-extension SettingsViewUnitsViewModel: SettingsRepresentable {
-    
-}
+extension SettingsViewUnitsViewModel: SettingsRepresentable { }
