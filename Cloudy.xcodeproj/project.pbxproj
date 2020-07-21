@@ -48,6 +48,7 @@
 		CC771A83247E8D6200050113 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC771A82247E8D6200050113 /* WeekViewModel.swift */; };
 		CCE5CF27248FB76700999E47 /* WeatherDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5CF26248FB76700999E47 /* WeatherDayViewModel.swift */; };
 		CCE5CF2A248FBA5700999E47 /* WeatherDayPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5CF29248FBA5700999E47 /* WeatherDayPresentable.swift */; };
+		E145083124C7893800DC7727 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145083024C7893800DC7727 /* AddLocationViewModel.swift */; };
 		E1F0A66C24AAD479005F9AAD /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F0A66B24AAD479005F9AAD /* weather.json */; };
 		E1F0A66E24AAD4B1005F9AAD /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A66D24AAD4B1005F9AAD /* XCTestCase.swift */; };
 		E1F0A67024AAD642005F9AAD /* DayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0A66F24AAD642005F9AAD /* DayViewModelTests.swift */; };
@@ -111,6 +112,7 @@
 		CCD8AE7824925F2400AC7142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCE5CF26248FB76700999E47 /* WeatherDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewModel.swift; sourceTree = "<group>"; };
 		CCE5CF29248FBA5700999E47 /* WeatherDayPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayPresentable.swift; sourceTree = "<group>"; };
+		E145083024C7893800DC7727 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 		E1F0A66B24AAD479005F9AAD /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
 		E1F0A66D24AAD4B1005F9AAD /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		E1F0A66F24AAD642005F9AAD /* DayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModelTests.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4AF1A8246E84A20013D68C /* AddLocationViewController.swift */,
+				E145082F24C7891E00DC7727 /* View Models */,
 			);
 			path = "Add Location View Controller";
 			sourceTree = "<group>";
@@ -448,6 +451,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		E145082F24C7891E00DC7727 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E145083024C7893800DC7727 /* AddLocationViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,6 +565,7 @@
 				CC4AF182246E83960013D68C /* AppDelegate.swift in Sources */,
 				CC4AF1B1246E84A20013D68C /* DayViewController.swift in Sources */,
 				CC622CF12476A96F002122A4 /* DayViewModel.swift in Sources */,
+				E145083124C7893800DC7727 /* AddLocationViewModel.swift in Sources */,
 				CC4AF1CD246E84CC0013D68C /* Location.swift in Sources */,
 				CC4AF1D6246E94EC0013D68C /* TimeNotation.swift in Sources */,
 				CC4AF1B8246E84A20013D68C /* SettingsTableViewCell.swift in Sources */,
