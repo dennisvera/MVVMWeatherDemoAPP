@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -537,11 +537,16 @@
                                     <outlet property="delegate" destination="1SC-03-Wyq" id="p5h-ju-EYh"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vei-72-5Xq">
+                                <rect key="frame" x="177.5" y="313.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="top" secondItem="3Mb-Ss-OAB" secondAttribute="top" id="Fog-z0-vv1"/>
+                            <constraint firstItem="vei-72-5Xq" firstAttribute="centerY" secondItem="3Mb-Ss-OAB" secondAttribute="centerY" id="GoR-0f-boC"/>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="leading" secondItem="3Mb-Ss-OAB" secondAttribute="leading" id="KtM-He-7Xm"/>
+                            <constraint firstItem="vei-72-5Xq" firstAttribute="centerX" secondItem="3Mb-Ss-OAB" secondAttribute="centerX" id="NcO-rM-zmr"/>
                             <constraint firstItem="UXA-Nw-IDn" firstAttribute="top" secondItem="kC8-yI-yKo" secondAttribute="bottom" id="TX2-mX-WjC"/>
                             <constraint firstAttribute="trailing" secondItem="kC8-yI-yKo" secondAttribute="trailing" id="t4j-NW-1vE"/>
                         </constraints>
@@ -554,6 +559,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="vei-72-5Xq" id="npg-jN-th5"/>
                         <outlet property="searchBar" destination="K22-9s-gOl" id="lND-vd-kdm"/>
                         <outlet property="tableView" destination="kC8-yI-yKo" id="JTj-z6-wjs"/>
                     </connections>

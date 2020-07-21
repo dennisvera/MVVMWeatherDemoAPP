@@ -46,14 +46,14 @@ class AddLocationViewModel {
   
   // MARK: - Public API
   
-  func locations(at index: Int) -> Location? {
+  func location(at index: Int) -> Location? {
     guard index < locations.count else { return nil }
     
     return locations[index]
   }
   
   func viewModelForLocation(at index: Int) -> LocationRepresentable? {
-    guard let location = locations(at: index) else { return nil }
+    guard let location = location(at: index) else { return nil }
     
     return LocationViewModel(location: location.location, locationAsString: location.name)
   }
