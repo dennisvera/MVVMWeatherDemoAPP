@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B58352D371F5404FC4F66DA /* Pods_CloudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BF8D64125E0DEF94EEBBB3 /* Pods_CloudyTests.framework */; };
+		AA7D9E646787FF635147E461 /* Pods_Cloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED13E63824C161D4AB334FE /* Pods_Cloudy.framework */; };
 		CC113F34248A58D60065930D /* SettingsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC113F33248A58D60065930D /* SettingsPresentable.swift */; };
 		CC4AF182246E83960013D68C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4AF181246E83960013D68C /* AppDelegate.swift */; };
 		CC4AF184246E83960013D68C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4AF183246E83960013D68C /* SceneDelegate.swift */; };
@@ -67,6 +69,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2845685AB8388FB857801D05 /* Pods-CloudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudyTests/Pods-CloudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35CAD85660F6339624F586C8 /* Pods-Cloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.release.xcconfig"; path = "Target Support Files/Pods-Cloudy/Pods-Cloudy.release.xcconfig"; sourceTree = "<group>"; };
+		4107E8B30CB9C9DA1C1041D5 /* Pods-Cloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy.debug.xcconfig"; path = "Target Support Files/Pods-Cloudy/Pods-Cloudy.debug.xcconfig"; sourceTree = "<group>"; };
+		42BF8D64125E0DEF94EEBBB3 /* Pods_CloudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78844607BB7A8319CB92ADE4 /* Pods-CloudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudyTests.release.xcconfig"; path = "Target Support Files/Pods-CloudyTests/Pods-CloudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC113F33248A58D60065930D /* SettingsPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresentable.swift; sourceTree = "<group>"; };
 		CC4AF17E246E83960013D68C /* Cloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4AF181246E83960013D68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +125,7 @@
 		E1F0A66F24AAD642005F9AAD /* DayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModelTests.swift; sourceTree = "<group>"; };
 		E1F0A67124AB7B12005F9AAD /* WeekViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModelTests.swift; sourceTree = "<group>"; };
 		E1F0A67324AB81B1005F9AAD /* WeatherDayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewModelTests.swift; sourceTree = "<group>"; };
+		FED13E63824C161D4AB334FE /* Pods_Cloudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7D9E646787FF635147E461 /* Pods_Cloudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,12 +141,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B58352D371F5404FC4F66DA /* Pods_CloudyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C110E0883B5DF15CB718A72B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED13E63824C161D4AB334FE /* Pods_Cloudy.framework */,
+				42BF8D64125E0DEF94EEBBB3 /* Pods_CloudyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC113F32248A58240065930D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +171,8 @@
 				CC4AF180246E83960013D68C /* Cloudy */,
 				CCD8AE7524925F2400AC7142 /* CloudyTests */,
 				CC4AF17F246E83960013D68C /* Products */,
+				D69F007285E5F773B5C7A359 /* Pods */,
+				C110E0883B5DF15CB718A72B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,6 +472,18 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		D69F007285E5F773B5C7A359 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4107E8B30CB9C9DA1C1041D5 /* Pods-Cloudy.debug.xcconfig */,
+				35CAD85660F6339624F586C8 /* Pods-Cloudy.release.xcconfig */,
+				2845685AB8388FB857801D05 /* Pods-CloudyTests.debug.xcconfig */,
+				78844607BB7A8319CB92ADE4 /* Pods-CloudyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E145082F24C7891E00DC7727 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,9 +499,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC4AF192246E83970013D68C /* Build configuration list for PBXNativeTarget "Cloudy" */;
 			buildPhases = (
+				5A473B409C355D291EF6CB80 /* [CP] Check Pods Manifest.lock */,
 				CC4AF17A246E83960013D68C /* Sources */,
 				CC4AF17B246E83960013D68C /* Frameworks */,
 				CC4AF17C246E83960013D68C /* Resources */,
+				F96EC2311B0F0D9265ADC1FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,9 +518,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCD8AE7D24925F2400AC7142 /* Build configuration list for PBXNativeTarget "CloudyTests" */;
 			buildPhases = (
+				9ED229F5F76521A7C2D17A46 /* [CP] Check Pods Manifest.lock */,
 				CCD8AE7024925F2400AC7142 /* Sources */,
 				CCD8AE7124925F2400AC7142 /* Frameworks */,
 				CCD8AE7224925F2400AC7142 /* Resources */,
+				CC17B1A783D2713F641171C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -556,6 +593,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A473B409C355D291EF6CB80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cloudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED229F5F76521A7C2D17A46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC17B1A783D2713F641171C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudyTests/Pods-CloudyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudyTests/Pods-CloudyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudyTests/Pods-CloudyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96EC2311B0F0D9265ADC1FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudy/Pods-Cloudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cloudy/Pods-Cloudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cloudy/Pods-Cloudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC4AF17A246E83960013D68C /* Sources */ = {
@@ -761,10 +879,11 @@
 		};
 		CC4AF193246E83970013D68C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4107E8B30CB9C9DA1C1041D5 /* Pods-Cloudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2493UGBPKJ;
+				DEVELOPMENT_TEAM = B426D3XC5Q;
 				INFOPLIST_FILE = "Cloudy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -779,10 +898,11 @@
 		};
 		CC4AF194246E83970013D68C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CAD85660F6339624F586C8 /* Pods-Cloudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2493UGBPKJ;
+				DEVELOPMENT_TEAM = B426D3XC5Q;
 				INFOPLIST_FILE = "Cloudy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -797,6 +917,7 @@
 		};
 		CCD8AE7B24925F2400AC7142 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2845685AB8388FB857801D05 /* Pods-CloudyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -820,6 +941,7 @@
 		};
 		CCD8AE7C24925F2400AC7142 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78844607BB7A8319CB92ADE4 /* Pods-CloudyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
