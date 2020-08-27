@@ -9,7 +9,6 @@
 import RxSwift
 import RxCocoa
 import Foundation
-import CoreLocation
 
 class AddLocationViewModel {
   
@@ -23,7 +22,7 @@ class AddLocationViewModel {
     locationsRelay.value.count
   }
   
-  private lazy var geocoder = CLGeocoder()
+  private let locationService: LocationService
   
   var locationsDriver: Driver<[Location]> {
     locationsRelay.asDriver()
@@ -39,7 +38,9 @@ class AddLocationViewModel {
 
   private let disposeBag = DisposeBag()
   
-  init(query: Driver<String>) {
+  init(query: Driver<String>, locationService: LocationService) {
+    self.locationService = locationService
+    
     query
       .throttle(.seconds(1))
       .distinctUntilChanged()
@@ -77,25 +78,20 @@ class AddLocationViewModel {
     queryingRelay.accept(true)
     
     // Geocode Address String
-    geocoder.geocodeAddressString(addressString) { [weak self] (placemarks, error) in
-      // Create Buffer
-      var locations: [Location] = []
+    locationService.geocode(addressString: addressString) { [weak self] result in
+      guard let strongSelf = self else { return }
       
       // Update Helper
-      self?.queryingRelay.accept(false)
+      strongSelf.queryingRelay.accept(false)
       
-      if let error = error {
-        print("Unable to Forward Geocode Address (\(error))")
-      } else if let placemarks = placemarks {
-        locations = placemarks.compactMap { (placemark) -> Location? in
-          guard let name = placemark.name else { return nil }
-          guard let location = placemark.location else { return nil }
-          return Location(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        }
+      switch result {
+      case .success(let locations):
+        strongSelf.locationsRelay.accept(locations)
+      case .failure(let error):
+        strongSelf.locationsRelay.accept([])
+        
+        print("Unable to Forward Geocode Adress: \(error)")
       }
-      
-      // Update Locations
-      self?.locationsRelay.accept(locations)
     }
   }
 }

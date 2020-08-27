@@ -54,7 +54,7 @@ class AddLocationViewController: UIViewController {
   
   private func setupViewModel() {
     // Initialize View Model
-    viewModel = AddLocationViewModel(query: searchBar.rx.text.orEmpty.asDriver())
+    viewModel = AddLocationViewModel(query: searchBar.rx.text.orEmpty.asDriver(), locationService: GeoCoder())
     
     viewModel.locationsDriver.drive(onNext: { [weak self] locations in
       self?.tableView.reloadData()
